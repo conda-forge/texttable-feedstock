@@ -1,6 +1,6 @@
 {% set name = "texttable" %}
-{% set version = "1.6.1" %}
-{% set sha256 = "2b60a5304ccfbeac80ffae7350d7c2f5d7a24e9aab5036d0f82489746419d9b2" %}
+{% set version = "1.6.2" %}
+{% set sha256 = "eff3703781fbc7750125f50e10f001195174f13825a92a45e9403037d539b4f4" %}
 
 package:
   name: {{ name|lower }}
