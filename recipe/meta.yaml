@@ -1,6 +1,6 @@
 {% set name = "texttable" %}
-{% set version = "1.6.2" %}
-{% set sha256 = "eff3703781fbc7750125f50e10f001195174f13825a92a45e9403037d539b4f4" %}
+{% set version = "1.6.3" %}
+{% set sha256 = "ce0faf21aa77d806bbff22b107cc22cce68dc9438f97a2df32c93e9afa4ce436" %}
 
 package:
   name: {{ name|lower }}
@@ -33,7 +33,7 @@ about:
   home: https://github.com/foutaise/texttable/
   license: LGPL-3.0
   license_family: LGPL
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   summary: Python module for creating simple ASCII tables
   description: texttable is a module to generate a formatted text table, using ASCII characters.
   doc_url: https://github.com/foutaise/texttable#documentation
