@@ -19,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python =2.7|>=3.5
     - setuptools
 
   run:
-    - python
+    - python =2.7|>=3.5
 
 test:
   imports:
@@ -32,7 +32,7 @@ test:
 about:
   home: https://github.com/foutaise/texttable/
   license: LGPL-3.0
-  license_family: LGPL
+  license_family: LGPL-3.0-only
   license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   summary: Python module for creating simple ASCII tables
   description: texttable is a module to generate a formatted text table, using ASCII characters.
