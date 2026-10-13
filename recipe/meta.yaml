@@ -1,6 +1,6 @@
 {% set name = "texttable" %}
-{% set version = "1.7.0" %}
-{% set sha256 = "2d2068fb55115807d3ac77a4ca68fa48803e84ebb0ee2340f858107a36522638" %}
+{% set version = "1.7.1" %}
+{% set sha256 = "ce71fc5928ede6cd7a60dbe3cb2845e6df8f5598fe435252ea1b31722415fda7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install . --no-deps --ignore-installed
 
 requirements:
